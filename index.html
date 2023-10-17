@@ -1,0 +1,135 @@
+<html>
+
+<head>
+  <title>sage sarvie</title>
+  <style>
+    html {
+      margin: 0;
+      background: white;
+      /* background: blue; */
+      display: flex;
+    }
+
+    body {
+      padding: 120px;
+      background: white;
+      max-width: 1000px;
+      min-height: 100%;
+      margin: 0 auto;
+    }
+
+    @font-face {
+      font-family: 'Pistilli Roman';
+      src: url('assets/Pistilli-Roman.otf') format('opentype');
+    }
+
+    h1 {
+      font-family: 'Pistilli Roman', sans-serif;
+      color: rgb(192, 203, 186);
+      font-size: 8vw; /* Relative to the body width */
+      font-weight: normal;
+      margin: 0;
+      margin-left: 40px;
+      margin-bottom: 10px;
+      position: fixed;
+      top: 20px;
+      left: 0;
+      transition: color 0.3s;
+      cursor: pointer;
+    }
+    h1:hover{
+      color:grey;
+    }
+
+    #email-link {
+      position: fixed;
+      font-size: 1vw; /* Relative to the body width */
+      top: calc(4% - 1%); /* Adjust position relative to font size */
+      right: 5%;
+      text-decoration: none;
+      font-family: Helvetica, sans-serif;
+      color: rgb(156, 164, 160);
+    }
+    #ig-link {
+      position: fixed;
+      font-size: 1vw;
+      top: 5%;
+      right: 5%;
+      text-decoration: none;
+      font-family: Helvetica, sans-serif;
+      color: rgb(156, 164, 160);
+    }
+
+      img {
+      display: block;
+      margin: 2% auto; /* Center horizontally and use relative margin */
+      max-width: 90%;
+      box-sizing: border-box;
+    }
+    video {
+      display: block;
+      margin: 2% auto; /* Center horizontally and use relative margin */
+      max-width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <a id="email-link" href="mailto:sagesarvie@gmail.com">sagesarvie@gmail.com</a>
+  <a id="ig-link" href="https://www.instagram.com/sagesarvie">@sagesarvie</a>
+  <a id="top"></a>
+  <a href="#top">
+      <h1 id="scrollToTop">
+        sage sarvie
+      </h1>
+      <script>
+        document.getElementById("scrollToTop").addEventListener("click", function() {
+            scrollToTop(1000); // Adjust the duration (in milliseconds) for a slower transition
+        });
+
+        function scrollToTop(duration) {
+            const start = window.pageYOffset;
+            const startTime = performance.now();
+
+            function step(currentTime) {
+                const elapsedTime = currentTime - startTime;
+                const scrollTo = easeInOut(elapsedTime, start, -start, duration);
+                window.scrollTo(0, scrollTo);
+
+                if (elapsedTime < duration) {
+                    requestAnimationFrame(step);
+                }
+            }
+
+            function easeInOut(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return (c / 2) * t * t + b;
+                t--;
+                return (-c / 2) * (t * (t - 2) - 1) + b;
+            }
+
+            requestAnimationFrame(step);
+        }
+    </script>
+  </a>
+  <a href="cliff.html">
+    <img src="assets/images/FloatingDay.png" alt="Floating Day">
+  </a>
+  <a href="desert.html">
+    <img src="assets/images/Cubehouseday.png">
+  </a>
+  <a href="conversation.html">
+    <img src="assets/images/Pondloungeday.png">
+  </a>
+</a>
+</a>
+<video autoplay loop muted controls>
+    <source src="assets/videos/0001-0288.mp4" type="video/mp4">
+</video>
+<a href="productdesign.html">
+  <img src="assets/images/ProductDesert2.jpg">
+</a>
+</body>
+
+</html>
