@@ -27,7 +27,7 @@
     h1 {
       font-family: 'Pistilli Roman', sans-serif;
       color: rgb(192, 203, 186);
-      font-size: 8vw;
+      font-size: 7.5vw;
       /* Relative to the body width */
       font-weight: normal;
       margin: 0;
@@ -46,25 +46,42 @@
 
     #email-link {
       position: fixed;
-      font-size: 1vw;
+      font-size: 1.25vw;
       /* Relative to the body width */
-      top: calc(4% - 1%);
+      top: 2.5%;
       /* Adjust position relative to font size */
       right: 5%;
       text-decoration: none;
       font-family: Helvetica, sans-serif;
-      color: rgb(156, 164, 160);
+      color: rgb(166, 173, 170);
     }
 
     #ig-link {
       position: fixed;
-      font-size: 1vw;
-      top: 1.5%;
+      font-size: 1.25vw;
+      top: 5.5%;
       right: 5%;
       text-decoration: none;
       font-family: Helvetica, sans-serif;
-      color: rgb(156, 164, 160);
+      color: rgb(166, 173, 170);
     }
+
+    #about-link {
+      position: fixed;
+      font-size: 1.25vw;
+      top: 8.5%;
+      right: 5%;
+      text-decoration: none;
+      font-family: Helvetica, sans-serif;
+      color: rgb(166, 173, 170);
+    }
+
+
+#email-link:hover,
+#ig-link:hover,
+#about-link:hover {
+  color: gray; /* Change 'your-hover-color' to the desired hover color */
+}
 
     @media (max-width: 500px) {
       #email-link {
@@ -97,6 +114,7 @@
 
   <a id="email-link" href="mailto:sagesarvie@gmail.com">sagesarvie@gmail.com</a>
   <a id="ig-link" href="https://www.instagram.com/sagesarvie">@sagesarvie</a>
+  <a id="about-link" href="about.html">about</a>
   <a id="top"></a>
   <a href="#top">
     <h1 id="scrollToTop">
