@@ -23,12 +23,55 @@
       font-family: 'Pistilli Roman';
       src: url('assets/Pistilli-Roman.otf') format('opentype');
     }
+    p {
+  font-family: Helvetica, sans-serif; 
+  font-size: 16px; 
+  line-height: 1;
+  color: #5c5c5c; 
+  margin: 2%;
+}
+.image-with-rotated-text {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.rotated-text {
+  font-family: Helvetica;
+  text-decoration: none;
+  color: rgb(166, 173, 170);
+  writing-mode: vertical-rl; /* Rotate text 90 degrees */
+  margin-left: -12px;
+  transform: rotate(180deg); 
+  white-space: nowrap;
+  font-size: 1.05vw; 
+
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  margin: 0% 0;
+}
+
+.image-container img {
+  max-width: 80%;
+  box-sizing: border-box;
+}
+
+img {
+      display: flex;
+      margin-top: 2%;
+      max-width: 80%;
+      box-sizing: border-box;
+    }
 
     h1 {
       font-family: 'Pistilli Roman', sans-serif;
       color: rgb(192, 203, 186);
       font-size: 7.5vw;
-      /* Relative to the body width */
       font-weight: normal;
       margin: 0;
       margin-left: 40px;
@@ -43,6 +86,9 @@
     h1:hover {
       color: grey;
     }
+    .rotated-text:hover {
+  color: gray;
+}
 
     #email-link {
       position: fixed;
@@ -87,25 +133,15 @@
       #email-link {
         font-size: 2vw;
       }
-
       #ig-link {
         font-size: 2vw;
       }
     }
-
-    img {
-      display: block;
-      margin: 2% auto;
-      /* Center horizontally and use relative margin */
-      max-width: 90%;
-      box-sizing: border-box;
-    }
-
     video {
       display: block;
       margin: 2% auto;
       /* Center horizontally and use relative margin */
-      max-width: 90%;
+      max-width: 80%;
     }
   </style>
 </head>
@@ -145,28 +181,46 @@
           t--;
           return (-c / 2) * (t * (t - 2) - 1) + b;
         }
-
         requestAnimationFrame(step);
       }
     </script>
   </a>
   <a href="cliff.html">
-    <img src="assets/images/Floatingday.png">
+    <div class="image-container">
+      <div class="image-with-rotated-text">
+        <div class="rotated-text">architectural / set / concept design</div>
+        <img src="assets/images/Floatingday.png">
+      </div>
+    </div>
   </a>
+  
   <a href="desert.html">
-    <img src="assets/images/Cubehouseday.png">
+    <div class="image-container">
+      <div class="image-with-rotated-text">
+        <img src="assets/images/Cubehouseday.png">
+      </div>
+    </div>
   </a>
+  
   <a href="conversation.html">
-    <img src="assets/images/Pondloungeday.png">
+    <div class="image-container">
+      <div class="image-with-rotated-text">
+        <img src="assets/images/Pondloungeday.png">
+      </div>
+    </div>
+    <video autoplay loop muted controls>
+      <source src="assets/videos/0001-0288.mp4" type="video/mp4">
+    </video>
   </a>
-  </a>
-  </a>
-  <video autoplay loop muted controls>
-    <source src="assets/videos/0001-0288.mp4" type="video/mp4">
-  </video>
+  
   <a href="productdesign.html">
-    <img src="assets/images/ProductDesert2.jpg">
+    <div class="image-container">
+      <img src="assets/images/ProductDesert2.jpg">
+    </div>
   </a>
-</body>
 
+</body>
+<footer>
+  <p>&copy; 2023 sage sarvie</p>
+</footer>
 </html>
