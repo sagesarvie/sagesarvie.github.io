@@ -66,28 +66,26 @@ body {
     .image-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content:right;
 }
 
 /* Style odd rows (left-justified) */
 .image-container:nth-child(odd) img {
   max-width: 30%; /* Adjust the width and margins as needed */
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /* Style even rows (right-justified) */
 .image-container:nth-child(even) img {
   max-width: 30%; /* Adjust the width and margins as needed */
-  margin-left: 2px; /* Push images to the right in even rows */
-  margin-right: 2px;
+  margin-left: 5px; /* Push images to the right in even rows */
+  margin-right: 5px;
 }
 
 img {
-    margin: 5px;
-  max-width: 100%; /* Adjust this to leave space for margins between images */
-  /* You may also want to add a specific width to ensure even spacing */
-  /* width: calc(50% - 10px); */
+  margin: 20px;
+  max-width: 100%;
 }
   </style>
 </head>
