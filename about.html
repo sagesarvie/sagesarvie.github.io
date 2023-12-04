@@ -3,16 +3,24 @@
 <head>
   <link rel="icon" type="image/png" href="assets/images/120020.jpg">
   <title>sage sarvie | product design </title>
+  <link rel="stylesheet" type="text/css" href="subpage-header.css" /> 
   <style>
-html {
-      margin: 0;
-      background: white;
-      /* background: blue; */
-      display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+    #back-button {
+      padding-top: 30px;
+      padding-left: 50px;
+  font-size: 5vw;
     }
+}
 
 body {
-      padding: 50px;
+      padding: 80px;
       background: white;
       margin: 0;
       max-width: 100%;
@@ -26,90 +34,105 @@ body {
   text-align: left; 
 } */
 
-    section p {
+section p {
   white-space: none;
   margin: 10px 0 5px 0;
 }
-    p {
+p {
   font-family: Helvetica, sans-serif; 
   font-size: 16px; 
   line-height: 1;
   color: #5c5c5c; 
   margin: 0px 0; 
 }
-    #back-button {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      text-decoration: none;
-      font-family: Helvetica, sans-serif;
-      color: rgb(116, 122, 119);
-      font-size: 3vw;
-      margin-left: 10px;
-      cursor: pointer;
-    }
-    #back-button:hover{
-      color:rgb(156, 164, 160);
-    }
-
-    .image-with-text {
-    display:flex;
-    align-items: flex-start;
-    padding: 0px; /* Adjust padding as needed */
-    margin-top: 150px;
-}
 
 .text {
-    flex: 1;
-    margin-top: 0px;
-    margin-left: 30px;
-    padding: 50px; /* Add space between text and image */
+  flex: auto;
+  padding-right: 50px; /* Add space between text and image */
 }
 .text p {
-    font-size: 20px;
-    color: #777; /* Adjust text styles as needed */
+  font-size: 20px;
+  color: #777; /* Adjust text styles as needed */
 }
 .text a {
-    color: inherit; /* This will make the link inherit the color of the surrounding text */
-    
+  color: inherit; /* This will make the link inherit the color of the surrounding text */
 }
 
-.image-with-text img {
-    max-width: 30%; /* Adjust the image size as needed */
-    margin-right: 100px;
-    margin-top: 10px;
+.artist-image {
+    display:flex;
+    align-items: center;
+    padding: 0px; /* Adjust padding as needed */
+}
+.artist-image img {
+    max-width: 100%; /* Adjust the image size as needed */
+}
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+@media (max-width: 1000px) {
+  .container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .text {
+    flex: auto;
+    padding-left: 85px;
+    padding-right: 50px; /* Add space between text and image */
+  }
+
+  .artist-image {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px; /* Adjust padding as needed */
+  }
+  .artist-image img {
+    max-width: 80%; /* Adjust the image size as needed */
+  }
+
 }
   </style>
 </head>
-<div class="image-with-text">
-  <div class="text">
-    <p>sage sarvie is a multidisciplinary designer from ottawa, 
-      canada now based in the usa. 
-      she studied architectural conservation & sustainability engineering at carleton university 
-      and has industry experience in ottawa, irvine, new york, and seattle. 
-    </p>
-      <p> 
-        she was part of the season 0 digital artist residency at web3 company wildxyz and
-        her surrealist dreamscapes have been featured on hypebae, <a href="https://visualatelier8.com/interview-sage-sarvie-architectural-surrealism/">visual atelier 8</a>, and in two 
-        separate exhibitions at the <a href="https://www.seattlenftmuseum.com/">seattle nft museum</a>.
-      </p> 
-  </div>
-  <img src="assets/images/Sage_Wild_Retouched-1.jpeg">
-</div>
-  
-</div>
-<body>
-    <header>
-        <h1></h1>
-    </header>
-
+  <body>
+    
     <nav>
+        <a id="back-button" href="index.html">  ← </a>
         <!-- Add navigation links here if needed -->
     </nav>
-    <a id="back-button" href="index.html">  ← </a>
 
-</body>
-<footer>
-  <p>&copy; 2023 sage sarvie</p>
-</footer>
+    <div class="container">
+      <div class="text">
+        <p>sage sarvie is a multidisciplinary designer from ottawa, 
+          canada now based in the usa. 
+          she studied architectural conservation & sustainability engineering at carleton university 
+          and has industry experience in ottawa, irvine, new york, and seattle. 
+        </p>
+          <p> 
+            she was part of the season 0 digital artist residency at web3 company wildxyz and
+            her surrealist dreamscapes have been featured on hypebae, <a href="https://visualatelier8.com/interview-sage-sarvie-architectural-surrealism/">visual atelier 8</a>, and in two 
+            separate exhibitions at the <a href="https://www.seattlenftmuseum.com/">seattle nft museum</a>.
+          </p> 
+      </div>
+      <div class="artist-image">
+        <img src="assets/images/Sage_Wild_Retouched-1.jpeg">
+      </div>
+    </div>
+
+  </body>
+  <!-- <footer>
+    <p>&copy; 2023 sage sarvie</p>
+  </footer> -->
 </html>
