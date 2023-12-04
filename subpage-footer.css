@@ -1,0 +1,11 @@
+section p {
+  white-space: normal;
+}
+
+p {
+  font-family: Helvetica, sans-serif; 
+  font-size: 16px; 
+  line-height: 1;
+  color: #3f3c3c; 
+  margin: 10px 30px; 
+}
