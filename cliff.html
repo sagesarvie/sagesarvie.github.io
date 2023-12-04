@@ -1,173 +1,74 @@
-<html>
-
-<head>
-  <link rel="icon" type="image/png" href="assets/images/120020.jpg">
-  <title>sage sarvie | cliff </title>
-  <style>
-html {
-      margin: 0;
-      background: white;
-      display: flex;
-    }
-
-body {
-      padding: 0px;
-      align-content: center;
-      background: white;
-      max-width: 100%;
-      min-height: 100%;
-      position: relative;
-      /* margin: 0 auto; */
-      
-    }
-
-    section p {
-  white-space: normal;
-}
-    p {
-  font-family: Helvetica, sans-serif; 
-  font-size: 16px; 
-  line-height: 1;
-  color: #3f3c3c; 
-  margin: 10px 0; 
-}
-    #back-button {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      text-decoration: none;
-      font-family: Helvetica, sans-serif;
-      color: rgb(116, 122, 119);
-      font-size: 3vw;
-      margin-left: 10px;
-      cursor: pointer;
-    }
-    #back-button:hover{
-      color:rgb(156, 164, 160);
-    }
-
-    #email-link {
-      position: fixed;
-      font-size: 1vw; 
-      top: calc(4% - 1%); 
-      right: 5%;
-      text-decoration: none;
-      font-family: Helvetica, sans-serif;
-      color: rgb(156, 164, 160);
-    }
-    #ig-link {
-      position: fixed;
-      font-size: 1vw;
-      top: 40px;
-      right: 5%;
-      text-decoration: none;
-      font-family: Helvetica, sans-serif;
-      color: rgb(156, 164, 160);
-    }
-
-.image-container {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-video {
-      display:flex;
-      margin: 5px auto;
-      max-width: 500px;
-      justify-content: right;
-    }
-
-/* @media (max-width: 500px) {
-
-} */
-  .image-container img {
-    max-width: 500px;
-    margin: 5px;
-}
-
-.grid-parent {
-  display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.grid-div {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, auto);
-
-}
-
-.grid-item {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-  margin: 5px;
-}
-
-  </style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Custom style sheet ".css" imports here-->
+    <link rel="stylesheet" type="text/css" href="cliff.css" /> 
+    <link rel="stylesheet" type="text/css" href="subpage-footer.css" /> 
+    <link rel="stylesheet" type="text/css" href="subpage-header.css" /> 
+    <title> sage sarvie | cliff </title>
 </head>
-<body class="body">
-  <div class="">
-    <div class="grid-parent">
-      <div class="grid-item">
-        <img src="assets/images/Floatingday.png">
-      </div>
-      <div class="grid-item">
-        <img src="assets/images/Floatingnight.png">
-      </div>
-        <div class="grid-item">
-        <img src="assets/images/Floatingdraft.png">
-      </div>
-      <!-- Add more images as needed -->
-    </div>
-    
-    <div class="image-container">
-      <img src="assets/images/Rock-housebase.png">
-      <img src="assets/images/Rock-houseangle.png">
-      <img src="assets/images/Rock-housedraft2.png">
-      <!-- Add more images as needed -->
-    </div>
-
-    <div class="image-container">
-      <img src="assets/images/Cylinderhouse.png">
-      <img src="assets/images/Cylinderhouse65.png">
-      <img src="assets/images/Cylinderhouse135.png">
-      <!-- Add more images as needed -->
-    </div>
-    <video autoplay loop muted controls>
-      <source src="assets/videos/0001-0199.mov" type="video/mp4">
-    </video>
-  </div>
-    <header>
-        <h1></h1>
-    </header>
-
+<body>
     <nav>
+        <a id="back-button" href="index.html">  ← </a>
         <!-- Add navigation links here if needed -->
     </nav>
-    <a id="back-button" href="index.html">  ← </a>
+  <div class="container">
+    <ul class="image-gallery">
+      <li>
+        <img src="assets/images/Floatingday.png" alt="" />
+      </li>
+      <li>
+        <img src="assets/images/Floatingnight.png" alt="" />
+      </li>
+      <li>
+        <img src="assets/images/Floatingdraft.png" alt="" />
+      </li>
+      <li>
+        <img src="assets/images/Rock-housebase.png" alt="" />
+      </li>
+      <li>
+        <img src="assets/images/Rock-houseangle.png" alt="" />
+      </li>
+      <li>
+        <img src="assets/images/Rock-housedraft2.png" alt="" />
+      </li>
+      <li>
+        <img src="assets/images/Cylinderhouse.png" alt="" />
+      </li>
+      <li>
+        <img src="assets/images/Cylinderhouse65.png" alt="" />
+      </li>
+
+      <li>
+        <img src="assets/images/Cylinderhouse135.png" alt="" />
+      </li>
+      <div class="video-container">
+        <video autoplay loop muted controls>
+          <source src="assets/videos/0001-0199.mov" type="video/mp4">
+        </video>
+      </div>
+    </ul>
     
-    <main>
-        <section>
-            <p>This is a collection of dreamscapes in cliff-like environments.</p>
-        </section>
+  </div>
+  <main>
+      <section>
+          <p>This is a collection of dreamscapes in cliff-like environments.</p>
+      </section>
 
-        <section>
-            <p></p>
-        </section>
-    </main>
+      <section>
+          <p></p>
+      </section>
+  </main>
 
-    <aside>
-        <!-- Add additional content or widgets here if needed -->
-    </aside>
+  <aside>
+      <!-- Add additional content or widgets here if needed -->
+  </aside>
 
-    <footer>
-        <p>&copy; 2023 sage sarvie</p>
-    </footer>
+  <footer>
+      <p>&copy; 2023 sage sarvie</p>
+  </footer>
 </body>
-
 </html>
