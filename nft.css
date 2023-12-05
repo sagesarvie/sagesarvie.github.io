@@ -20,7 +20,8 @@
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 70px;
+  gap: 50px;
+  margin-bottom: 50px;
 }
 
 /* "height" defines image height, play around with
