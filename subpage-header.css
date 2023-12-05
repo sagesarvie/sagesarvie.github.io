@@ -25,6 +25,13 @@ nav {
   margin: 15px;
 }
 
+p {
+  text-decoration: none; 
+  font-family: Helvetica, sans-serif; 
+  font-size: 15px; /* Adjust the font size */
+  color: #6c6c6c; /* Adjust the font color */
+}
+
 #back-button {
   position: fixed;
   top: 20px;
