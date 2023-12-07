@@ -30,7 +30,7 @@
 .image-gallery-1 > li {
   flex:  auto;
   
-  height: 700px;
+  height: 600px;
   position: relative;
 }
 
@@ -67,11 +67,11 @@
   flex:  auto;
   position: relative;
 
-  height: 1000px;
+  height: 700px;
 }
 .image-gallery-2 li img {
   object-fit: cover;
-  object-position: 50% 18%;
+  object-position: 50% 20%;
   width: 100%;
   height: 100%;
   vertical-align: middle;
@@ -96,7 +96,7 @@
   flex:  auto;
   position: relative;
 
-  height: 1000px;
+  height: 700px;
 }
 
 .image-gallery-3 li video {
