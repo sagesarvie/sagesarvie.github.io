@@ -20,6 +20,7 @@
   height: 600px;
 }
 
+
 /* Mobile rules for image heights */
 @media (max-width: 500px) {
   .image-gallery > li {
@@ -63,7 +64,8 @@
 /* Don't really need to edit, as videos are integrated into the list itself.
    If you want to edit video height, because its inline just edit ".image-gallery > li"
 */
-video {
+video,
+img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
